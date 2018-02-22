@@ -274,7 +274,7 @@ CIM_SCRIPT="/usr/local/bin/cim"
 QL_SCRIPT="/usr/local/bin/ql"
 
 install_cim() {
-    curl -L "https://raw.github.com/KeenS/CIM/$CIM_INSTALL_BRANCH/scripts/cim_installer" | /bin/sh
+    curl -L "https://raw.github.com/sionescu/CIM/$CIM_INSTALL_BRANCH/scripts/cim_installer" | /bin/sh
 
     install_script "$CL_SCRIPT"  ". \"$HOME\"/.cim/init.sh; exec cl  \"\$@\""
     install_script "$CIM_SCRIPT" ". \"$HOME\"/.cim/init.sh; exec cim \"\$@\""

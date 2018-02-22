@@ -83,7 +83,7 @@ Here's a list of `.travis.yml` files from various projects using CL-TRAVIS:
 [1]: https://travis-ci.org
 [2]: https://raw.githubusercontent.com/luismbo/cl-travis/master/.travis.yml
 [3]: http://docs.travis-ci.com/user/getting-started/
-[4]: https://github.com/KeenS/CIM
+[4]: https://github.com/sionescu/CIM
 [5]: https://github.com/cl-babel/babel
 [6]: https://github.com/trivial-garbage/trivial-garbage
 [7]: http://common-lisp.net/projects/alexandria/
