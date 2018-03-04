@@ -101,7 +101,7 @@ install_script() {
 }
 
 ABCL_TARBALL_URL1="https://common-lisp.net/project/armedbear/releases/1.5.0/abcl-bin-1.5.0.tar.gz"
-ABCL_TARBALL_URL2="https://capella.cddr.org/ci/abcl-bin-1.5.0.tar.gz"
+ABCL_TARBALL_URL2="https://cdn.cddr.org/ci/abcl-bin-1.5.0.tar.gz"
 ABCL_TARBALL="abcl.tar.gz"
 ABCL_DIR="$HOME/abcl"
 ABCL_SCRIPT="/usr/local/bin/abcl"
@@ -119,7 +119,7 @@ install_abcl() {
 }
 
 SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.4.2-x86-64-linux-binary.tar.bz2"
-SBCL_TARBALL_URL2="https://capella.cddr.org/ci/sbcl-1.4.2-x86-64-linux-binary.tar.bz2"
+SBCL_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.4.2-x86-64-linux-binary.tar.bz2"
 SBCL_TARBALL="sbcl.tar.bz2"
 SBCL_DIR="$HOME/sbcl"
 
@@ -133,7 +133,7 @@ install_sbcl() {
 }
 
 SBCL32_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.2.7-x86-linux-binary.tar.bz2"
-SBCL32_TARBALL_URL2="https://capella.cddr.org/ci/sbcl-1.2.7-x86-linux-binary.tar.bz2"
+SBCL32_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.2.7-x86-linux-binary.tar.bz2"
 SBCL32_TARBALL="sbcl32.tar.bz2"
 SBCL32_DIR="$HOME/sbcl32"
 
@@ -150,7 +150,7 @@ install_sbcl32() {
 }
 
 CCL_TARBALL_URL1="https://github.com/Clozure/ccl/releases/download/v1.11.5/ccl-1.11.5-linuxx86.tar.gz"
-CCL_TARBALL_URL2="https://capella.cddr.org/ci/ccl-1.11.5-linuxx86.tar.gz"
+CCL_TARBALL_URL2="https://cdn.cddr.org/ci/ccl-1.11.5-linuxx86.tar.gz"
 CCL_TARBALL="ccl.tar.gz"
 CCL_DIR="$HOME/ccl"
 CCL_SCRIPT_PREFIX="/usr/local/bin"
@@ -178,10 +178,10 @@ install_ccl() {
     cim use ccl-system --default
 }
 
-CMUCL_TARBALL_URL1="https://common-lisp.net/project/cmucl/downloads/snapshots/2017/10/cmucl-2017-10-x86-linux.tar.bz2"
-CMUCL_EXTRA_TARBALL_URL1="https://common-lisp.net/project/cmucl/downloads/snapshots/2017/10/cmucl-2017-10-x86-linux.extra.tar.bz2"
-CMUCL_TARBALL_URL2="https://capella.cddr.org/ci/cmucl-2017-10-x86-linux.tar.bz2"
-CMUCL_EXTRA_TARBALL_URL2="https://capella.cddr.org/ci/cmucl-2017-10-x86-linux.extra.tar.bz2"
+CMUCL_TARBALL_URL1="https://common-lisp.net/project/cmucl/downloads/snapshots/2018/03/cmucl-2018-03-x86-linux.tar.bz2"
+CMUCL_EXTRA_TARBALL_URL1="https://common-lisp.net/project/cmucl/downloads/snapshots/2018/03/cmucl-2018-03-x86-linux.extra.tar.bz2"
+CMUCL_TARBALL_URL2="https://cdn.cddr.org/ci/cmucl-2018-03-x86-linux.tar.bz2"
+CMUCL_EXTRA_TARBALL_URL2="https://cdn.cddr.org/ci/cmucl-2018-03-x86-linux.extra.tar.bz2"
 CMUCL_TARBALL="cmucl.tar.bz2"
 CMUCL_EXTRA_TARBALL="cmucl-extra.tar.bz2"
 CMUCL_DIR="$HOME/cmucl"
