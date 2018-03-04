@@ -118,8 +118,8 @@ install_abcl() {
     cim use abcl-system --default
 }
 
-SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.4.2-x86-64-linux-binary.tar.bz2"
-SBCL_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.4.2-x86-64-linux-binary.tar.bz2"
+SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.4.5-x86-64-linux-binary.tar.bz2"
+SBCL_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.4.5-x86-64-linux-binary.tar.bz2"
 SBCL_TARBALL="sbcl.tar.bz2"
 SBCL_DIR="$HOME/sbcl"
 
@@ -132,8 +132,8 @@ install_sbcl() {
     cim use sbcl-system --default
 }
 
-SBCL32_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.2.7-x86-linux-binary.tar.bz2"
-SBCL32_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.2.7-x86-linux-binary.tar.bz2"
+SBCL32_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.4.3-x86-linux-binary.tar.bz2"
+SBCL32_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.4.3-x86-linux-binary.tar.bz2"
 SBCL32_TARBALL="sbcl32.tar.bz2"
 SBCL32_DIR="$HOME/sbcl32"
 
