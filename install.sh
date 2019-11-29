@@ -98,8 +98,8 @@ install_script() {
     sudo mv "$tmp" "$path"
 }
 
-ABCL_TARBALL_URL1="https://common-lisp.net/project/armedbear/releases/1.5.0/abcl-bin-1.5.0.tar.gz"
-ABCL_TARBALL_URL2="https://cdn.cddr.org/ci/abcl-bin-1.5.0.tar.gz"
+ABCL_TARBALL_URL1="https://common-lisp.net/project/armedbear/releases/1.6.0/abcl-bin-1.6.0.tar.gz"
+ABCL_TARBALL_URL2="https://cdn.cddr.org/ci/abcl-bin-1.6.0.tar.gz"
 ABCL_TARBALL="abcl.tar.gz"
 ABCL_DIR="$HOME/abcl"
 ABCL_SCRIPT="/usr/local/bin/abcl"
@@ -116,8 +116,8 @@ install_abcl() {
     cim use abcl-system --default
 }
 
-SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.4.5-x86-64-linux-binary.tar.bz2"
-SBCL_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.4.5-x86-64-linux-binary.tar.bz2"
+SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.5.9-x86-64-linux-binary.tar.bz2"
+SBCL_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.5.9-x86-64-linux-binary.tar.bz2"
 SBCL_TARBALL="sbcl.tar.bz2"
 SBCL_DIR="$HOME/sbcl"
 
@@ -176,10 +176,10 @@ install_ccl() {
     cim use ccl-system --default
 }
 
-CMUCL_TARBALL_URL1="https://common-lisp.net/project/cmucl/downloads/snapshots/2018/03/cmucl-2018-03-x86-linux.tar.bz2"
-CMUCL_EXTRA_TARBALL_URL1="https://common-lisp.net/project/cmucl/downloads/snapshots/2018/03/cmucl-2018-03-x86-linux.extra.tar.bz2"
-CMUCL_TARBALL_URL2="https://cdn.cddr.org/ci/cmucl-2018-03-x86-linux.tar.bz2"
-CMUCL_EXTRA_TARBALL_URL2="https://cdn.cddr.org/ci/cmucl-2018-03-x86-linux.extra.tar.bz2"
+CMUCL_TARBALL_URL1="https://common-lisp.net/project/cmucl/downloads/snapshots/2019/06/cmucl-2019-06-x86-linux.tar.bz2"
+CMUCL_EXTRA_TARBALL_URL1="https://common-lisp.net/project/cmucl/downloads/snapshots/2019/06/cmucl-2019-06-x86-linux.extra.tar.bz2"
+CMUCL_TARBALL_URL2="https://cdn.cddr.org/ci/cmucl-2019-06-x86-linux.tar.bz2"
+CMUCL_EXTRA_TARBALL_URL2="https://cdn.cddr.org/ci/cmucl-2019-06-x86-linux.extra.tar.bz2"
 CMUCL_TARBALL="cmucl.tar.bz2"
 CMUCL_EXTRA_TARBALL="cmucl-extra.tar.bz2"
 CMUCL_DIR="$HOME/cmucl"
