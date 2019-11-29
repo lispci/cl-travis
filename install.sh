@@ -116,14 +116,16 @@ install_abcl() {
     cim use abcl-system --default
 }
 
-SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.5.9-x86-64-linux-binary.tar.bz2"
-SBCL_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.5.9-x86-64-linux-binary.tar.bz2"
+# SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.5.9-x86-64-linux-binary.tar.bz2"
+# Self-compiled with GLIBC 2.26 for Travis compatibility
+SBCL_TARBALL_URL2="https://cdn.cddr.org/ci/sbcl-1.5.9-x86-64-glibc2.26-linux-binary.tar.bz2"
 SBCL_TARBALL="sbcl.tar.bz2"
 SBCL_DIR="$HOME/sbcl"
 
 install_sbcl() {
     echo "Installing SBCL..."
-    get "$SBCL_TARBALL" "$SBCL_TARBALL_URL1" "$SBCL_TARBALL_URL2"
+    # get "$SBCL_TARBALL" "$SBCL_TARBALL_URL1" "$SBCL_TARBALL_URL2"
+    get "$SBCL_TARBALL" "$SBCL_TARBALL_URL2"
     unpack -j "$SBCL_TARBALL" "$SBCL_DIR"
     ( cd "$SBCL_DIR" && sudo bash install.sh )
 
