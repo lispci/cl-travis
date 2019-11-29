@@ -26,7 +26,7 @@ install:
     then
       ./install.sh;
     else
-      curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | sh;
+      curl https://raw.githubusercontent.com/sionescu/cl-travis/master/install.sh | sh;
     fi     
 
 # this bit is just testing that travis correctly sets up ASDF to find
