@@ -31,7 +31,7 @@ unpack() {
 install_i386_arch() {
     sudo dpkg --add-architecture i386
     sudo apt-get update -qq
-    sudo apt-get install -y libc6:i386 libc6-dev:i386 lib32stdc++-7-dev:i386
+    sudo apt-get install -y libc6:i386 libc6-dev:i386 libstdc++-7-dev:i386
 }
 
 # add_to_lisp_rc <string>
