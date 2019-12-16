@@ -202,7 +202,7 @@ install_cmucl() {
     # XXX: no CIM support for CMUCL
 }
 
-ECL_TARBALL_URL1="https://cdn.cddr.org/ci/ecl-16.1.3-linux-amd64.tar.gz"
+ECL_TARBALL_URL1="https://cdn.cddr.org/ci/ecl-16.1.3+a7a18707b8-linux-amd64.tar.gz"
 ECL_TARBALL="ecl.tar.gz"
 
 install_ecl() {
