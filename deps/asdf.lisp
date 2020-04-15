@@ -67,7 +67,7 @@
 ;;; where most such features are set.
 ;;; ABCL and CCL already define this feature appropriately.
 ;;; Seems to be unconditionally present for SBCL, ACL, and clasp
-;;; Don't know about ecl, or others
+;;; Don't know about others
  (eval-when (:load-toplevel :compile-toplevel :execute)
    ;; abcl pushes :package-local-nicknames without UIOP interfering,
    ;; and Lispworks will do so
@@ -89,10 +89,10 @@
   #+package-local-nicknames
   (:import-from #+allegro #:excl
                 #+sbcl #:sb-ext
-                #+(or clasp abcl) #:ext
+                #+(or abcl clasp ecl) #:ext
                 #+ccl #:ccl
                 #+lispworks #:hcl
-                #-(or allegro sbcl clasp abcl ccl lispworks)
+                #-(or abcl allegro ccl clasp ecl lispworks sbcl)
                 (error "Don't know from which package this lisp supplies the local-package-nicknames API.")
                 #:remove-package-local-nickname #:package-local-nicknames #:add-package-local-nickname)
   (:export
