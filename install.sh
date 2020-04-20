@@ -19,13 +19,13 @@ get() {
 
 # unpack <uncompression option> <file> <destination>
 unpack() {
-    opt=$1
-    file=$2;
-    destination=$3;
+    opt=$1; shift
+    file=$1; shift
+    destination=$1; shift
 
     echo "Unpacking tarball $1 into $3..."
     mkdir -p "$destination"
-    tar -C "$destination" --strip-components=1 "$opt" -xf "$file"
+    tar -C "$destination" --strip-components=1 "$opt" -xf "$file" "$@"
 }
 
 install_i386_arch() {
@@ -149,8 +149,8 @@ install_sbcl32() {
     cim use sbcl-system --default
 }
 
-CCL_TARBALL_URL1="https://github.com/Clozure/ccl/releases/download/v1.11.5/ccl-1.11.5-linuxx86.tar.gz"
-CCL_TARBALL_URL2="https://cdn.cddr.org/ci/ccl-1.11.5-linuxx86.tar.gz"
+CCL_TARBALL_URL1="https://github.com/Clozure/ccl/releases/download/v1.12/linuxx86.tar.gz"
+CCL_TARBALL_URL2="https://cdn.cddr.org/ci/ccl-1.12.0-linuxx86.tar.gz"
 CCL_TARBALL="ccl.tar.gz"
 CCL_DIR="$HOME/ccl"
 CCL_SCRIPT_PREFIX="/usr/local/bin"
@@ -167,7 +167,7 @@ install_ccl() {
         script="ccl"
     fi
     get "$CCL_TARBALL" "$CCL_TARBALL_URL1" "$CCL_TARBALL_URL2"
-    unpack -z "$CCL_TARBALL" "$CCL_DIR"
+    unpack -z "$CCL_TARBALL" "$CCL_DIR" --strip-components=0
 
     install_script "$CCL_SCRIPT_PREFIX/$script" "\"$CCL_DIR/$bin\" \"\$@\""
     if [ "$LISP" = "ccl32" ]; then
