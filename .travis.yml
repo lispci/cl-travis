@@ -1,9 +1,9 @@
+os: linux
 dist: bionic
-language: lisp
-sudo: required
+language: generic
 
 env:
-  matrix:
+  jobs:
     - LISP=sbcl
     - LISP=sbcl32
     - LISP=ccl
@@ -15,7 +15,7 @@ env:
     - LISP=clisp32
     - LISP=cmucl
 
-matrix:
+jobs:
   allow_failures:
     - env: LISP=ccl32
     # CIM not available for CMUCL
@@ -24,12 +24,7 @@ matrix:
 # either use a local install.sh script or install it via curl. Feel
 # free to simplify this section in your own .travis.yml file.
 install:
-  - if [ -x ./install.sh ] && head -2 ./install.sh | grep '^# cl-travis' > /dev/null;
-    then
-      ./install.sh;
-    else
-      curl https://raw.githubusercontent.com/sionescu/cl-travis/master/install.sh | sh;
-    fi     
+  - ./install.sh
 
 # this bit is just testing that travis correctly sets up ASDF to find
 # systems placed somewhere within ~/lisp. You can remove this section
