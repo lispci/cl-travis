@@ -98,8 +98,8 @@ install_script() {
     sudo mv "$tmp" "$path"
 }
 
-ABCL_TARBALL_URL1="https://common-lisp.net/project/armedbear/releases/1.7.0/abcl-bin-1.7.0.tar.gz"
-ABCL_TARBALL_URL2="https://cdn.cddr.org/ci/abcl-bin-1.7.0.tar.gz"
+ABCL_TARBALL_URL1="https://common-lisp.net/project/armedbear/releases/1.7.1/abcl-bin-1.7.1.tar.gz"
+ABCL_TARBALL_URL2="https://cdn.cddr.org/ci/abcl-bin-1.7.1.tar.gz"
 ABCL_TARBALL="abcl.tar.gz"
 ABCL_DIR="$HOME/abcl"
 ABCL_SCRIPT="/usr/local/bin/abcl"
