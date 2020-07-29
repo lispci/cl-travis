@@ -213,6 +213,9 @@ install_ecl() {
     cim use ecl-system --default
 }
 
+CLISP_TARBALL_URL1="https://cdn.cddr.org/ci/clisp-2.49.93+20200729.tar.gz"
+CLISP_TARBALL="clisp.tar.gz"
+
 install_clisp() {
     if [ "$LISP" = "clisp32" ]; then
         echo "Installing 32-bit CLISP..."
@@ -223,7 +226,9 @@ install_clisp() {
         sudo ln -s /usr/bin/clisp /usr/local/bin/clisp32
     else
         echo "Installing CLISP..."
-        sudo apt-get install -y clisp
+        get "$CLISP_TARBALL" "$CLISP_TARBALL_URL1"
+        sudo apt-get install -y libffcall1b
+        sudo tar -C / -xzf "$CLISP_TARBALL"
     fi
     cim use clisp-system --default
 }
