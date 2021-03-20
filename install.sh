@@ -98,8 +98,8 @@ install_script() {
     sudo mv "$tmp" "$path"
 }
 
-ABCL_TARBALL_URL1="https://common-lisp.net/project/armedbear/releases/1.7.1/abcl-bin-1.7.1.tar.gz"
-ABCL_TARBALL_URL2="https://cdn.cddr.org/ci/abcl-bin-1.7.1.tar.gz"
+ABCL_TARBALL_URL1="https://common-lisp.net/project/armedbear/releases/1.8.0/abcl-bin-1.8.0.tar.gz"
+ABCL_TARBALL_URL2="https://cdn.cddr.org/ci/abcl-bin-1.8.0.tar.gz"
 ABCL_TARBALL="abcl.tar.gz"
 ABCL_DIR="$HOME/abcl"
 ABCL_SCRIPT="/usr/local/bin/abcl"
@@ -118,7 +118,7 @@ install_abcl() {
 
 # SBCL_TARBALL_URL1="http://prdownloads.sourceforge.net/sbcl/sbcl-1.5.9-x86-64-linux-binary.tar.bz2"
 # Self-compiled with GLIBC 2.25 for Travis compatibility
-SBCL_TARBALL_URL1="https://cdn.cddr.org/ci/sbcl-2.0.7+r00-x86-64-linux-binary.tar.bz2"
+SBCL_TARBALL_URL1="https://cdn.cddr.org/ci/sbcl-2.1.2+r00-x86-64-linux-binary.tar.bz2"
 SBCL_TARBALL="sbcl.tar.bz2"
 SBCL_DIR="$HOME/sbcl"
 
